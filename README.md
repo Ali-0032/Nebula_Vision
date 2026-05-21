@@ -8,7 +8,7 @@ Progetto 1: La conquista dello spazio
 
 # Nebula Vision
 Autore: Alissa Bionda \
-[Nebula Vision](https://ali-0032.github.io/CV429/05_prototipo_3/)
+[Nebula Vision](https://ali-0032.github.io/Nebula_Vision/05_prototipo_3/)
 
 
 ## Introduzione e tema
