@@ -43,8 +43,11 @@ Infine, su alcune di queste immagini è prevista un'interazione diretta: la pres
 
 
 ## Tecnologia usata
-- HTML e CSS: stile e struttura.
-- JavaScript (p5.js): interazioni.
+La tecnologia usata per creare il sito web è stata:
+- HTML e CSS: struttura e stile del sito web
+- JavaScript (p5.js): interazioni del sito.
+
+Di seguito viene riportata la sezione di codice JavaScript che gestisce l'interazione tramite hotspot sulle immagini:
 
 ```JavaScript
 let activeType = null;
