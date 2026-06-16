@@ -36,7 +36,7 @@ Nello specifico, le tre opzioni di visualizzazione gestiscono i contenuti nel se
 - Frequenza in Luce Visibile: mostra l'immagine classica accompagnata da un breve testo di spiegazione riguardante la nebulosa e la sua specifica tipologia astronomica.
 - Frequenza in Infrarosso Vicino e Medio: presentano un testo generale che racconta cosa sia possibile osservare di quella nebulosa grazie a quella determinata frequenza. In queste sezioni è inoltre integrato un breve testo esplicativo che descrive tutte le frequenze che compongono l'immagine e i dettagli scientifici visibili grazie a esse.
 
-Infine, su alcune di queste immagini è prevista un'interazione diretta: la presenza di hotspot circolari grafici attiva, al clic dell'utente, un ingrandimento (zoom) dell'area selezionata. Questa azione è accompagnata dall'apertura di un box informativo specifico che approfondisce le caratteristiche fisiche e astronomiche della zona evidenziata.
+Infine, su alcune di queste immagini è prevista un'interazione diretta: la presenza di hotspot circolari grafici attiva, al clic dell'utente, un ingrandimento dell'area selezionata. Questa azione è accompagnata dall'apertura di un box informativo specifico che approfondisce le caratteristiche fisiche e astronomiche della zona evidenziata.
 
 <img width="1728" height="995" alt="Screenshot 2026-06-16 alle 19 03 39" src="https://github.com/user-attachments/assets/09a9dc32-6501-445d-b1c2-a2eadf8102b8" />
 
@@ -45,6 +45,82 @@ Infine, su alcune di queste immagini è prevista un'interazione diretta: la pres
 ## Tecnologia usata
 - HTML e CSS: stile e struttura.
 - JavaScript (p5.js): interazioni.
+
+```JavaScript
+let activeType = null;
+
+function changeContent(tabNumber) {
+  if (hStella) {
+    hStella.style.display = 'none';
+    hStella.style.width = '40px';
+    hStella.style.height = '40px';
+  }
+  if (hPolvere) hPolvere.style.display = 'none';
+  if (hNodi) hNodi.style.display = 'none';
+
+  if (tabNumber === 2) {
+    if (hStella) {
+        hStella.style.display = 'block';
+        hStella.style.width = '170px';
+        hStella.style.height = '170px';
+        hStella.style.top = '70%';
+        hStella.style.left = '65%';
+    }
+  }
+}
+
+function togglePopup(type, show) {
+    const popups = document.querySelectorAll('.popup-box');
+    const svgContainer = document.getElementById('connection-svg');
+    
+    popups.forEach(p => p.style.display = 'none');
+    
+    if (show && type) {
+        activeType = type;
+        document.getElementById(`popup-${type}`).style.display = 'block';
+        svgContainer.style.display = 'block';
+        updateLine();
+    } else {
+        activeType = null;
+        svgContainer.style.display = 'none';
+    }
+}
+
+function updateLine() {
+    if (!activeType) return;
+    const popup = document.getElementById(`popup-${activeType}`);
+    const hotspot = document.getElementById(`hotspot-${activeType}`);
+    const svgLine = document.getElementById('svg-line');
+    const wrapper = document.getElementById('interactive-wrapper');
+
+    if (popup && hotspot && wrapper) {
+        const wRect = wrapper.getBoundingClientRect();
+        const hRect = hotspot.getBoundingClientRect();
+        const pRect = popup.getBoundingClientRect();
+        let x1, y1, x2, y2;
+        
+        if (activeType === 'stella') {
+            x1 = hRect.right - wRect.left - 5;
+            y1 = hRect.top + hRect.height / 2.6 - wRect.top;
+            x2 = pRect.left - wRect.left + 130;
+            y2 = pRect.top + pRect.height / 2 - wRect.top;
+        } else {
+            x1 = hRect.left - wRect.left;
+            y1 = hRect.top + hRect.height / 2 - wRect.top;
+            x2 = pRect.right - wRect.left - 130;
+            y2 = pRect.top + pRect.height / 2 - wRect.top;
+        }
+        
+        svgLine.setAttribute('x1', x1); svgLine.setAttribute('y1', y1);
+        svgLine.setAttribute('x2', x2); svgLine.setAttribute('y2', y2);
+    }
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+  updateLine();
+}
+```
 
 ## Target e contesto d’uso
 Nebula Vision si rivolge a un’utenza generalista con un interesse per l’astronomia, alla ricerca di contenuti accessibili ma scientificamente rigorosi. Il progetto si colloca in un contesto d'uso di tipo divulgativo-educativo: attraverso l’esplorazione attiva delle immagini, l’utente viene guidato in un percorso di apprendimento dinamico, in cui l’intrattenimento visivo diventa lo strumento principale per la comprensione dei dati scientifici.
