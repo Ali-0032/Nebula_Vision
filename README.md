@@ -26,15 +26,19 @@ Il riferimento progettuale principale è Wikipedia, in particolare per quanto ri
 Il design dell'interfaccia è minimalista, scelta per lasciare spazio e rilevanza alle immagini, che costituiscono l'elemento principale e fondante del sito. Il font selezionato è il Roboto, utilizzato nelle versioni Regular e Condensed per garantire un'ottima leggibilità su schermo. Infine, la scelta di adottare uno sfondo nero richiama il concetto di spazio e universo, l'ambiente in cui si trovano le nebulose.
 
 ### Modalità di interazione:
-L'esperienza utente inizia con una sezione introduttiva volta a contestualizzare gli obiettivi del sito. La navigazione è affidata a una header bar, che permette di selezionare quale delle due nebulose esplorare.
+L'esperienza utente inizia dalla Hero section della pagina home, la quale contiene un breve testo con lo scopo di contestualizzare gli obiettivi del sito. Subito sotto è presente una sezione introduttiva volta a spiegare in generale all'utente cos'è una nebulosa e a presentare il Telescopio Spaziale Spitzer. Per quanto riguarda la navigazione generale, questa è affidata a una header bar posizionata in alto, che permette di selezionare ed esplorare le due nebulose disponibili nel sito.
 
-<img width="1728" height="990" alt="Screenshot 2026-04-22 alle 21 10 37" src="https://github.com/user-attachments/assets/f1649e7a-eccf-4cc5-9463-977534c37b33" />
+<img width="1728" height="995" alt="Screenshot 2026-06-16 alle 19 01 33" src="https://github.com/user-attachments/assets/7e38dab0-7504-4f1d-8e4a-8a8bfa5bb23a" />
 
-Una volta selezionata la nebulosa, l'interfaccia presenta un sistema di navigazione a pulsanti posto sotto il titolo, che consente di passare tra tre diverse frequenze d'onda. Questa funzione permette all'utente di osservare la nebulosa attraverso vari spettri infrarossi, offrendo una comparazione visiva immediata.
+Successivamente, una volta selezionata la nebulosa da esplorare, l'interfaccia presenta un sistema di navigazione a pulsanti posti direttamente sotto il titolo, che consente di passare fluidamente tra tre immagini della stessa nebulosa a diverse frequenze d'onda. Questa funzione permette all'utente di osservare l'oggetto celeste attraverso vari spettri infrarossi, offrendo una comparazione visiva immediata dello stesso soggetto.
 
-Il layout si completa con una quarta colonna laterale, dedicata all'approfondimento testuale. L’interazione principale avviene direttamente sull'immagine: la presenza di hotspot circolari attiva, al clic, un ingrandimento dell'area selezionata, accompagnato da un box informativo specifico che approfondisce le caratteristiche fisiche e astronomiche della zona evidenziata.
+Nello specifico, le tre opzioni di visualizzazione gestiscono i contenuti nel seguente modo:
+- Frequenza in Luce Visibile: mostra l'immagine classica accompagnata da un breve testo di spiegazione riguardante la nebulosa e la sua specifica tipologia astronomica.
+- Frequenza in Infrarosso Vicino e Medio: presentano un testo generale che racconta cosa sia possibile osservare di quella nebulosa grazie a quella determinata frequenza. In queste sezioni è inoltre integrato un breve testo esplicativo che descrive tutte le frequenze che compongono l'immagine e i dettagli scientifici visibili grazie a esse.
 
-<img width="1728" height="986" alt="Screenshot 2026-04-22 alle 21 11 53" src="https://github.com/user-attachments/assets/639c72be-b011-4e12-9895-327acbf5236d" />
+Infine, su alcune di queste immagini è prevista un'interazione diretta: la presenza di hotspot circolari grafici attiva, al clic dell'utente, un ingrandimento (zoom) dell'area selezionata. Questa azione è accompagnata dall'apertura di un box informativo specifico che approfondisce le caratteristiche fisiche e astronomiche della zona evidenziata.
+
+<img width="1728" height="995" alt="Screenshot 2026-06-16 alle 19 03 39" src="https://github.com/user-attachments/assets/09a9dc32-6501-445d-b1c2-a2eadf8102b8" />
 
 
 
