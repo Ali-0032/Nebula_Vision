@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="style.css">
     <style>
         .hero-background {
-            position: fixed;
+            position: absolute;
             top: 0; left: 0; width: 100%; height: 100%;
             background-size: cover;
             background-position: center;
             z-index: -1;
         }
         .hero-overlay {
-            position: fixed;
+            position: absolute;
             top: 0; left: 0; width: 100%; height: 100%;
             background: rgba(11, 14, 20, 0.4);
             z-index: -1;
@@ -33,13 +33,12 @@
             align-items: end;
         }
         .landing-text-box {
-            grid-column: 1 / span 2; /* Occupa le ultime 2 colonne */
+            grid-column: 1 / span 2;
             padding-bottom: 40px;
         }
         .landing-title-big {
             font-family: 'Roboto Condensed', sans-serif;
             font-size: 48px;
-            text-transform: uppercase;
             margin: 0;
         }
         .landing-subtitle-white {
@@ -83,6 +82,43 @@
             </p>
         </div>
     </div>
+
+    <div class="container" style="background-color: #0B0E14; position: relative; z-index: 10; border-top: 1px solid rgba(255, 255, 255, 0.1);">
+        
+        <section class="main-content">
+            
+            
+            <div class="image-wrapper" style="margin-top: 125px;">
+                <img src="spitzer.jpg" alt="Spitzer Space Telescope" class="nebula-img">
+            </div>
+            
+            <p class="caption"> NASA/JPL-Caltech/R. Hurt (IPAC)</p>
+
+        </section>
+
+        <aside class="content-sidebar">
+            <div class="extra-column">
+                <h2 class="overview-title">What is a Nebula?</h2>
+                <div class="overview-text">
+                    <p>
+                        A nebula is a gigantic interstellar cloud of dust and gas. They are classified by their life cycle: stellar nurseries, where stars are born, and stellar remnants (planetary or supernova), created by their death. Based on light, they are categorized as: emission (emitting own light), reflection (reflecting nearby light), and dark (blocking light). Although diffuse, they emit strong radiation captured by infrared telescopes through the dust's heat.
+                    </p>
+                    
+                </div>
+                <h2 class="overview-title" style="margin-top: 50px;">Spitzer Space Telescope</h2>
+                <div class="overview-text">
+                    <p>
+                        The Spitzer Space Telescope (2003–2020) was a NASA observatory that explored the cosmos in the infrared, penetrating interstellar dust to reveal protostars and planetary systems. Made of beryllium and initially cooled by liquid helium, it used three key instruments: IRAC (imaging), IRS (chemical spectrography), and MIPS (cold dust). After running out of helium in 2009, it continued for over a decade with the "Warm Mission" via IRAC, studying the universe from nearby asteroids to remote galaxies.
+                    </p>
+                    
+                </div>
+
+            </div>
+        </aside>
+
+    </div>
+        
+        
 
     <script>
         // Logica per alternare le immagini casualmente

@@ -35,7 +35,7 @@ function changeContent(tabNumber) {
       popupNodiContent.innerHTML = `
         <div style="display: flex; flex-direction: column; justify-content: flex-start; height: 100%;">
             <strong style="margin-bottom: 5px; display: block;">Cometary knots</strong>
-            <p style="margin: 0;">These "knots" are massive globules of dense gas and dust that populate the nebula; in the Helix Nebula alone, there are about 40,000 of them. Despite their name, they are not icy comets: they are called this because they have a dense, bright "head" facing the central star and a tail that stretches in the opposite direction, just like a comet. Each knot is gigantic, exceeding our entire Solar System in size, yet possessing a mass similar to that of the Earth.</p>
+            <p style="margin: 0;">These massive gas and dust globules populate the nebula; the Helix alone contains about 40,000. They are named for their comet-like appearance, featuring a bright "head" facing the central star and an opposite tail. Each knot is gigantic, exceeding our Solar System in size, yet possesses a mass similar to Earth's.</p>
         </div>
       `;
   }
@@ -44,7 +44,7 @@ function changeContent(tabNumber) {
       popupStellaContent.innerHTML = `
         <div style="display: flex; flex-direction: column; justify-content: flex-start; height: 100%;">
             <strong style="margin-bottom: 5px; display: block;">White dwarf</strong>
-            <p style="margin: 0;">At the center of the Helix shines a white dwarf called WD 2226-210, the dense core of a star once similar to our Sun. Despite its small size (with a radius of only 17,000 km), its temperature reaches 120,000 Kelvin, releasing the energy that lights up the entire nebula. Recent studies suggest that the survivors of an ancient planetary system may still orbit this stellar remnant.</p>
+            <p style="margin: 0;">At the center of the Helix shines WD 2226-210, the dense core of a sun-like star. Despite its small radius (17,000 km), its temperature reaches 120,000 Kelvin, lighting up the entire nebula. Recent studies suggest that the survivors of an ancient planetary system may still orbit this stellar remnant.</p>
         </div>
       `;
   }

@@ -31,7 +31,7 @@ function changeContent(tabNumber) {
       popupStellaContent.innerHTML = `
         <div style="display: flex; flex-direction: column; justify-content: flex-start; height: 100%;">
             <strong style="margin-bottom: 5px; display: block;">The Pillars of Creation</strong>
-            <p style="margin: 0;">Located in the Eagle Nebula about 7,000 light-years away, these towers of gas and dust known as "elephant trunks" are an extremely active star-forming region. As new stars are born within, the radiation from nearby giant stars slowly erodes the clouds, sculpting their iconic shape: with every creation, the pillars deteriorate. The largest structure is approximately four light-years long.</p>
+            <p style="margin: 0;">Located 7,000 light-years away, these gas and dust towers are an active star-forming region. Radiation from newly born stars slowly erodes the clouds, sculpting their iconic shape. This creative process gradually destroys the structures, the largest being four light-years long.</p>
         </div>
       `;
   }
