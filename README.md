@@ -28,7 +28,7 @@ Il design dell'interfaccia è minimalista, scelta per lasciare spazio e rilevanz
 ### Modalità di interazione:
 L'esperienza utente inizia dalla Hero section della pagina home, la quale contiene un breve testo con lo scopo di contestualizzare gli obiettivi del sito. Subito sotto è presente una sezione introduttiva volta a spiegare in generale all'utente cos'è una nebulosa e a presentare il Telescopio Spaziale Spitzer. Per quanto riguarda la navigazione generale, questa è affidata a una header bar posizionata in alto, che permette di selezionare ed esplorare le due nebulose disponibili nel sito.
 
-<img width="1728" height="995" alt="Screenshot 2026-06-16 alle 19 01 33" src="https://github.com/user-attachments/assets/7e38dab0-7504-4f1d-8e4a-8a8bfa5bb23a" />
+<img width="3456" height="4304" alt="Nebula Vision - Home" src="https://github.com/user-attachments/assets/49392939-cf29-45c0-9c57-4ac18a697d1c" />
 
 Successivamente, una volta selezionata la nebulosa da esplorare, l'interfaccia presenta un sistema di navigazione a pulsanti posti direttamente sotto il titolo, che consente di passare fluidamente tra tre immagini della stessa nebulosa a diverse frequenze d'onda. Questa funzione permette all'utente di osservare l'oggetto celeste attraverso vari spettri infrarossi, offrendo una comparazione visiva immediata dello stesso soggetto.
 
