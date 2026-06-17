@@ -37,9 +37,7 @@ Nello specifico, le tre opzioni di visualizzazione gestiscono i contenuti nel se
 - Frequenza in Infrarosso Vicino e Medio: presentano un testo generale che racconta cosa sia possibile osservare di quella nebulosa grazie a quella determinata frequenza. In queste sezioni è inoltre integrato un breve testo esplicativo che descrive tutte le frequenze che compongono l'immagine e i dettagli scientifici visibili grazie a esse.
 
 Infine, su alcune di queste immagini è prevista un'interazione diretta: la presenza di hotspot circolari grafici attiva, al clic dell'utente, un ingrandimento dell'area selezionata. Questa azione è accompagnata dall'apertura di un box informativo specifico che approfondisce le caratteristiche fisiche e astronomiche della zona evidenziata.
-
-<img width="1728" height="995" alt="Screenshot 2026-06-16 alle 19 03 39" src="https://github.com/user-attachments/assets/09a9dc32-6501-445d-b1c2-a2eadf8102b8" />
-
+<img width="3456" height="2458" alt="NASA Archive - Helix Nebula" src="https://github.com/user-attachments/assets/335a9ed0-dedd-453e-a83c-889ff3a492e4" />
 
 
 ## Tecnologia usata
